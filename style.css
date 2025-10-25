@@ -1,0 +1,24 @@
+h2{
+    display: flex;
+    justify-content: center;
+}
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+#box{
+    width: 1000px;
+    padding: auto;
+    margin: 20px auto;
+    background-color: grey;
+}
+.question{
+    width: 500px;
+    margin: 10px auto;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+}
+

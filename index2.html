@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<img src="doduk.jpg" alt="" style="justify-content: left;">
+<body>
+    <div class="" id="gumgo_an">
+        <h1>금고 털기</h1>
+        <a href="index.html"><button>return to fst page</button></a>
+        <hr>
+
+        <p id="text">금고를 털기 위해선 파이썬 문제를 풀어야한다!</p>
+        <br>
+        <hr>
+        <p>난이도 선택:</p>
+        <a href="index_easy.html" style="color: inherit;"><div class="nanido" id="easy"><strong>easy</strong></div></a><br><br>
+        <a href="index_normal.html" style="color: inherit;"><span class="nanido" id="normal"><strong>normal</strong></span></a><br><br>
+        <a href="index_hard.html" style="color: inherit;"><span id="hard"><strong>hard</strong></span></a>
+
+        <br><br><br><br><br><br><br><br>
+        <h3 class="text" id="btntext">만약 글씨의 크기가 작다면 이 버튼을 눌러주세요.</h3>
+        <button type="button" id="increase">+</button>
+        <button type="button" id="decrease">-</button>
+        <script>
+            let fontSize = 24;
+            const textelement = document.getElementById('text');
+
+            document.getElementById('increase').addEventListener('click', function () {
+                fontSize += 2;
+                textelement.style.fontSize = fontSize + 'px';
+            });
+
+            document.getElementById('decrease').addEventListener('click', function () {
+                if (fontSize > 12) { 
+                    fontSize -= 2; 
+                    textelement.style.fontSize = fontSize + 'px';
+                }
+            });
+        </script>
+        <style>
+            h1{
+                font-size:48px;
+            }
+            body{
+                justify-items: center;
+                align-items: center;
+                background-color: rgb(236, 218, 195);
+            }
+            #gumgo_an{
+                text-align: center;
+                justify-items: center;
+                justify-content: center;
+                height: 800px;
+                width: 600px;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border: 5px solid rgb(167, 120, 58);
+            }
+            #easy{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                text-align: center;
+                width: 400px;
+                height: 50px;
+                background-color: rgb(235, 185, 121);
+                font-size: 24px;
+                border: 5px solid rgb(99, 56, 0);
+                border-radius: 20px;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #normal{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                text-align: center;
+                justify-content: center;
+                width: 400px;
+                height: 50px;
+                background-color: rgb(201, 134, 47);
+                font-size: 24px;
+                border: 5px solid rgb(99, 56, 0);
+                border-radius: 20px;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #hard{
+                position: absolute;
+                display: flex;
+                justify-items: center;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+                height: 50px;
+                background-color: rgb(184, 110, 14);
+                font-size: 24px;
+                border: 5px solid rgb(99, 56, 0);
+                border-radius: 20px;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        </style>
+    </div>
+</body>
+</html>
